@@ -1,0 +1,14 @@
+.flag {
+    max-width: 100%;
+    border: 2px solid #000;
+}
+
+.countryName {
+    text-align: center;
+}
+
+.borderImg {
+    width: 40px;
+    margin-right: 40px;
+    border: 1px solid #000;
+}
