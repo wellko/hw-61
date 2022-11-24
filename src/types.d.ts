@@ -13,5 +13,6 @@ export  interface  CountryInfoResponse {
 }
 
 export interface Flag {
-    flag:string
+    flag:string;
+    name:string
 }

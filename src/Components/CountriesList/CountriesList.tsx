@@ -5,12 +5,10 @@ import CountryInfo from "../CountryInfo/CountryInfo";
 import './CountriesList.css';
 
 const CountriesList = () => {
+
+
     const url = 'https://restcountries.com/v2/all?fields=alpha3Code,name';
     const [countryList, setCountryList] = useState<CountryInfoResponse[]>([]);
-
-    useEffect(() => {
-        fetchData().catch(console.error);
-    }, []);
 
     const fetchData = useCallback(async () => {
         const postsResponse = await axios.get<Country[]>(url);
@@ -28,6 +26,10 @@ const CountriesList = () => {
         const newCountryList = await Promise.all(promises);
         setCountryList(newCountryList);
     }, []);
+
+    useEffect(() => {
+        fetchData().catch(console.error);
+    }, [fetchData]);
 
     const [countryData, setCountryData] = useState<CountryInfoResponse>({
         name: '',

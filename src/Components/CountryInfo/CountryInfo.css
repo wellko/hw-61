@@ -9,6 +9,11 @@
 
 .borderImg {
     width: 40px;
-    margin-right: 40px;
+    margin: 0 40px;
     border: 1px solid #000;
+}
+
+.bordersBlock{
+    display: inline-block;
+    margin: 20px;
 }
