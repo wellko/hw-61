@@ -1,0 +1,21 @@
+.countryList {
+    max-height: 95vh;
+    overflow-y: scroll;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.list{
+padding: 10px 0;
+}
+
+.list:hover {
+    background: #c5c5c5;
+}
+
+.GridContainer {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+}
